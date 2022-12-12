@@ -14,6 +14,16 @@ function allowlogin(usermail)
     if (a == 'demouser@gmail.com')
     {
         alert('valid user');
+        aptrinsic("identify",
+            {
+
+                "id": "GS123",
+                "email": a
+            },
+            {
+                "id": "GS",
+                "name": "Gainsight"
+            }); 
         location.href = "Page1.html";
     }
     else if(a == '')
