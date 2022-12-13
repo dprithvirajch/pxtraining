@@ -11,7 +11,7 @@
 function allowlogin(usermail)
 {
     var a = document.getElementById("usermail").value;
-    if (a == 'demouser@gmail.com' || 'lkchittajallu@gainsight.com'||'dpraj@gainsight.com')
+    if (a == 'demouser@gmail.com' ||a == 'lkchittajallu@gainsight.com'||a == 'dpraj@gainsight.com')
     { 
         var b= substr(a,1,5);
         alert('valid user');
