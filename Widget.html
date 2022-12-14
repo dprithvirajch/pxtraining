@@ -45,14 +45,21 @@
             
         })
       } );
-    $( function() {
-      $( ".dragblue" ).draggable();
-      stop : function r() {aptrinsic('track','dragevent',{"name":"blue drag", "color" : 'blue'});}
-    } );
-    $( function() {
-      $( ".draggreen" ).draggable();
-      stop : function r() {aptrinsic('track','dragevent',{"name":"green drag", "color" : 'green'});}
-    } );
+
+      $( function() {
+        $( ".dragblue").draggable({
+            stop : function r() {aptrinsic('track','dragevent',{"name":"blue drag", "color" : 'blue'});}
+            
+        })
+      } );
+
+      $( function() {
+        $( ".draggreen").draggable({
+            stop : function r() {aptrinsic('track','dragevent',{"name":"green drag", "color" : 'green'});}
+            
+        })
+      } );
+
     </script>
 </body>
 </html>
