@@ -11,6 +11,18 @@ function allowlogin(usermail)
     if (a == 'demouser@gmail.com' || a == 'lkchittajallu@gainsight.com' || a == 'dpraj@gainsight.com')
     { 
         var b= a.substr(0,5);
+aptrinsic("identify",
+{
+//User Fields
+  "id": b, // Required for logged in app users
+  "email":a,
+  "firstName": "Lalitha"
+},
+{
+//Account Fields
+  "id":"GS", //Required
+  "name":"Gainsight",
+});
         alert('valid user');
         location.href = "Page1.html";
     }
