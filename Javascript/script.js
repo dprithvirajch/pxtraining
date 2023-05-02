@@ -8,9 +8,25 @@
 function allowlogin(usermail)
 {
     var a = document.getElementById("usermail").value;
-    if (a == 'demouser@gmail.com' || a == 'lkchittajallu@gainsight.com' || a == 'dpraj@gainsight.com')
+    if (a == 'demouser@gmail.com' || a == 'lkchittajallu@gainsight.com')
     { 
         var b= a.substr(0,5);
+      
+      //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": b, // Required for logged in app users
+    "email": a,
+    "firstName": "John",
+    "lastName": "Smith"
+  },
+  {
+  //Account Fields
+    "id":"AM", //Required
+    "name":"Amazon"
+ });
+      
         alert('valid user');
         location.href = "Page1.html";
     }
