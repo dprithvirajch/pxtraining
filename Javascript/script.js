@@ -14,6 +14,22 @@ function allowlogin(usermail)
         var b= a.substr(0,5);
       
         alert('valid user');
+      
+      //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": b, // Required for logged in app users
+    "email": a,
+    "firstName": "John",
+    "lastName": "Smith"
+  },
+  {
+  //Account Fields
+    "id":"GS", //Required
+    "name":"Gainsight",
+    "Program": "Training" // flat custom attributes
+ });
         location.href = "Page1.html";
     }
     else if(a == '')
